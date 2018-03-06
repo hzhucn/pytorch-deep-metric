@@ -1,0 +1,45 @@
+test car***branchKS_orth-model.pkl
+Extract Features: [999/1017]	Time 0.089 (0.192)	Data 0.067 (0.168)	
+[0.45357275 0.56499816 0.67986718 0.79178453]
+test car***branchKS_orth-100_model.pkl
+Extract Features: [999/1017]	Time 0.113 (0.225)	Data 0.094 (0.199)	
+[0.63042676 0.73963842 0.83150904 0.8991514 ]
+test car***branchKS_orth-200_model.pkl
+Extract Features: [999/1017]	Time 0.072 (0.194)	Data 0.055 (0.170)	
+[0.69782315 0.80162342 0.87799779 0.93026688]
+test car***branchKS_orth-300_model.pkl
+Extract Features: [999/1017]	Time 0.070 (0.197)	Data 0.051 (0.171)	
+[0.734473   0.83421473 0.89570779 0.94170459]
+test car***branchKS_orth-400_model.pkl
+Extract Features: [999/1017]	Time 0.115 (0.218)	Data 0.092 (0.193)	
+[0.75956217 0.85069487 0.9097282  0.94982167]
+test car***branchKS_orth-500_model.pkl
+Extract Features: [999/1017]	Time 0.078 (0.217)	Data 0.059 (0.191)	
+[0.76669536 0.85143279 0.91145001 0.95019063]
+test car***branchKS_orth-600_model.pkl
+Extract Features: [999/1017]	Time 0.118 (0.226)	Data 0.095 (0.200)	
+[0.7796089  0.85954987 0.91538556 0.9504366 ]
+  train car***branchKS_orth-600_model.pkl
+Extract Features: [999/1007]	Time 0.228 (0.205)	Data 0.208 (0.180)	
+[0.64452446 0.75974671 0.8461634  0.90203626]
+test car***branchKS_orth-700_model.pkl
+Extract Features: [999/1017]	Time 0.060 (0.211)	Data 0.045 (0.185)	
+[0.78883286 0.86299348 0.91759931 0.95338827]
+test car***branchKS_orth-800_model.pkl
+Extract Features: [999/1017]	Time 0.064 (0.212)	Data 0.048 (0.187)	
+[0.7911696  0.87074161 0.92251876 0.95277334]
+test car***branchKS_orth-900_model.pkl
+Extract Features: [999/1017]	Time 0.100 (0.222)	Data 0.079 (0.196)	
+[0.7928914  0.87184848 0.92116591 0.95228139]
+test car***branchKS_orth-1000_model.pkl
+Extract Features: [999/1017]	Time 0.064 (0.203)	Data 0.048 (0.177)	
+[0.79264543 0.86754397 0.91821424 0.95498709]
+test car***branchKS_orth-1100_model.pkl
+Extract Features: [999/1017]	Time 0.064 (0.217)	Data 0.048 (0.191)	
+[0.79018571 0.86963473 0.92091994 0.95338827]
+test car***branchKS_orth-1200_model.pkl
+Extract Features: [999/1017]	Time 0.144 (0.215)	Data 0.114 (0.188)	
+[0.79572008 0.87209445 0.92239577 0.95621695]
+  train car***branchKS_orth-1200_model.pkl
+Extract Features: [999/1007]	Time 0.443 (0.206)	Data 0.413 (0.181)	
+[0.75726347 0.84504594 0.90402285 0.93618078]

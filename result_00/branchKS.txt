@@ -1,0 +1,45 @@
+test car***branchKS-model.pkl
+Extract Features: [999/1017]	Time 0.099 (0.203)	Data 0.077 (0.178)	
+[0.44680851 0.56561309 0.67900627 0.78354446]
+test car***branchKS-100_model.pkl
+Extract Features: [999/1017]	Time 0.177 (0.212)	Data 0.140 (0.186)	
+[0.62722912 0.74480384 0.83040216 0.89521584]
+test car***branchKS-200_model.pkl
+Extract Features: [999/1017]	Time 0.092 (0.202)	Data 0.072 (0.176)	
+[0.69782315 0.79977863 0.8725864  0.92928299]
+test car***branchKS-300_model.pkl
+Extract Features: [999/1017]	Time 0.121 (0.200)	Data 0.097 (0.175)	
+[0.73164432 0.82769647 0.89460091 0.94182757]
+test car***branchKS-400_model.pkl
+Extract Features: [999/1017]	Time 0.137 (0.221)	Data 0.114 (0.194)	
+[0.75845529 0.84368466 0.90702251 0.9442873 ]
+test car***branchKS-500_model.pkl
+Extract Features: [999/1017]	Time 0.103 (0.224)	Data 0.085 (0.198)	
+[0.76780224 0.85352355 0.91169598 0.94846882]
+test car***branchKS-600_model.pkl
+Extract Features: [999/1017]	Time 0.232 (0.216)	Data 0.198 (0.190)	
+[0.78305252 0.86385438 0.91538556 0.95511007]
+  train car***branchKS-600_model.pkl
+Extract Features: [999/1007]	Time 0.201 (0.214)	Data 0.185 (0.188)	
+[0.6496151  0.76545816 0.85212317 0.90489198]
+test car***branchKS-700_model.pkl
+Extract Features: [999/1017]	Time 0.159 (0.213)	Data 0.129 (0.187)	
+[0.7823146  0.86619112 0.91723035 0.95424917]
+test car***branchKS-800_model.pkl
+Extract Features: [999/1017]	Time 0.126 (0.212)	Data 0.106 (0.186)	
+[0.78415939 0.86262452 0.91796827 0.95105153]
+test car***branchKS-900_model.pkl
+Extract Features: [999/1017]	Time 0.117 (0.214)	Data 0.097 (0.188)	
+[0.79387529 0.87357029 0.92288771 0.95412618]
+test car***branchKS-1000_model.pkl
+Extract Features: [999/1017]	Time 0.101 (0.208)	Data 0.078 (0.182)	
+[0.78870988 0.86963473 0.91784528 0.95166646]
+test car***branchKS-1100_model.pkl
+Extract Features: [999/1017]	Time 0.153 (0.223)	Data 0.120 (0.196)	
+[0.78993974 0.86705202 0.9185832  0.95351125]
+test car***branchKS-1200_model.pkl
+Extract Features: [999/1017]	Time 0.089 (0.227)	Data 0.069 (0.200)	
+[0.79854876 0.87393924 0.91956709 0.95301931]
+  train car***branchKS-1200_model.pkl
+Extract Features: [999/1007]	Time 0.277 (0.218)	Data 0.254 (0.192)	
+[0.75068289 0.83623044 0.89421406 0.93332506]

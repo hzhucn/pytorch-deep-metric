@@ -1,0 +1,21 @@
+test car***knnsoftmax-model.pkl
+Extract Features: [999/1017]	Time 0.141 (0.171)	Data 0.117 (0.149)	
+[0.42454803 0.54101587 0.65342516 0.76534252]
+test car***knnsoftmax-600_model.pkl
+Extract Features: [999/1017]	Time 0.063 (0.175)	Data 0.048 (0.153)	
+[0.76362071 0.8521707  0.91132702 0.94736195]
+test car***knnsoftmax-800_model.pkl
+Extract Features: [999/1017]	Time 0.195 (0.175)	Data 0.155 (0.152)	
+[0.77850203 0.86336244 0.91882917 0.95154348]
+test car***knnsoftmax-1000_model.pkl
+Extract Features: [999/1017]	Time 0.077 (0.174)	Data 0.058 (0.151)	
+[0.79018571 0.86975772 0.92005903 0.95289632]
+test car***knnsoftmax-1100_model.pkl
+Extract Features: [999/1017]	Time 0.081 (0.175)	Data 0.059 (0.152)	
+[0.78329849 0.86594515 0.92030501 0.9540032 ]
+test car***knnsoftmax-1200_model.pkl
+Extract Features: [999/1017]	Time 0.147 (0.195)	Data 0.115 (0.172)	
+[0.79215349 0.87074161 0.92264174 0.95461813]
+  train car***knnsoftmax-1200_model.pkl
+Extract Features: [999/1007]	Time 0.173 (0.166)	Data 0.157 (0.144)	
+[0.76409238 0.84864664 0.90439533 0.93816737]
