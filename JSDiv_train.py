@@ -69,7 +69,7 @@ def main(args):
 
     optimizer = torch.optim.Adam(param_groups, lr=args.lr,
                                  weight_decay=args.weight_decay)
-    criterion = losses.create(args.loss, alpha=args.alpha, k=args.k).cuda()
+    criterion = losses.create(args.loss, alpha=args.alpha, gama=args.gama, sigma=args.sigma, k=args.k).cuda()
 
     data = DataSet.create(args.data, root=None, test=False)
     train_loader = torch.utils.data.DataLoader(
@@ -79,6 +79,8 @@ def main(args):
 
     for epoch in range(args.start, args.epochs):
         running_loss = 0.0
+        JSDiv_loss = 0.0
+
         for i, data in enumerate(train_loader, 0):
             inputs, labels = data
             # wrap them in Variable
@@ -89,18 +91,23 @@ def main(args):
 
             embed_feat = model(inputs)
 
-            loss, inter_, dist_ap, dist_an = criterion(embed_feat, labels)
+            loss, JSDiv, inter_, dist_ap, dist_an = criterion(embed_feat, labels)
             if args.orth > 0:
                 loss = orth_reg(model, loss, cof=args.orth)
             loss.backward()
             optimizer.step()
             running_loss += loss.data[0]
+            JSDiv_loss += JSDiv.data[0]
             if epoch == 0 and i == 0:
                 print(50*'#')
                 print('Train Begin -- HA-HA-HA')
 
-        print('[Epoch %05d]\t Loss: %.3f \t Accuracy: %.3f \t Pos-Dist: %.3f \t Neg-Dist: %.3f'
-              % (epoch + 1,  running_loss, inter_, dist_ap, dist_an))
+        # average
+        running_loss /= i
+        JSDiv_loss /= i
+
+        print('[Epoch %04d]\t Loss: %.3f \t JSDiv: %.7f \t Accuracy: %.3f \t Pos-Dist: %.3f \t Neg-Dist: %.3f'
+              % (epoch + 1,  running_loss, JSDiv_loss, inter_, dist_ap, dist_an))
 
         if epoch % args.save_step == 0:
             torch.save(model, os.path.join(log_dir, '%d_model.pkl' % epoch))
@@ -116,8 +123,16 @@ if __name__ == '__main__':
                         help=' number of samples from one class in mini-batch')
     parser.add_argument('-dim', default=512, type=int, metavar='n',
                         help='dimension of embedding space')
+
     parser.add_argument('-alpha', default=30, type=int, metavar='n',
                         help='hyper parameter in KNN Softmax')
+    parser.add_argument('-beta', default=30, type=int, metavar='n',
+                        help='hyper parameter in KNN Softmax')
+    parser.add_argument('-gama', default=0.1, type=float, metavar='n',
+                        help='hyper parameter in KNN Softmax')
+    parser.add_argument('-sigma', default=1, type=float, metavar='n',
+                        help='hyper parameter in KNN Softmax')
+
     parser.add_argument('-k', default=16, type=int, metavar='n',
                         help='number of neighbour points in KNN')
     parser.add_argument('-init', default='random',
